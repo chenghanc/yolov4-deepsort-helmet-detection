@@ -41,7 +41,8 @@ python headtracking.py
 - First train a **Yolov4 Detector** on custom head dataset using [darknet](https://github.com/AlexeyAB/darknet)
 - Do another training for cosine metric learning using [cosine_metric_learning](https://github.com/nwojke/cosine_metric_learning)
     - Get cropped head dataset
+        - Implement python code to crop head images based on Yolov4 Detector result
+        - Or Crop head images using darknet based on Yolov4 Detector result
     - Write a dataset adapter similar to the existing ones
-    - Train a **Tracker**
+    - Train / fine-tuning a new **Tracker** and then combine with Yolov4 Detector to perform head tracking
     
-
