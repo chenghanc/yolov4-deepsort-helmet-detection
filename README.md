@@ -44,7 +44,16 @@ Deepsort is trained for Person Re-Identification. If you want to perform head tr
 - Do another training for cosine metric learning using [cosine_metric_learning](https://github.com/nwojke/cosine_metric_learning)
     - Get cropped head dataset (sequential, ideally)
         - Implement python code to crop head images based on **Yolov4 Head Detector** result
-        - Or Crop head images using darknet based on **Yolov4 Head Detector** result
+        - Or crop head images using darknet based on **Yolov4 Head Detector** result
     - Write a dataset adapter similar to the existing ones
     - Train / fine-tune a new **Tracker** and then combine with **Yolov4 Head Detector** to perform head tracking
-    
+
+- Training command (If training goes wrong with **cosine-softmax** loss, then try **triplet** loss)
+
+```python
+python train_veri.py --dataset_dir=./VeRi --loss_mode=triplet --log_dir=./output/head/ --run_id=triplet
+```
+
+- For reference [reference](https://github.com/nwojke/cosine_metric_learning/issues/46)
+
+
