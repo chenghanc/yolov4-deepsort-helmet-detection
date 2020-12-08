@@ -1,0 +1,5 @@
+classes= 6
+train  = /home/nechk/NECHK-Results/helmet2/helmet2020-1/train.txt
+valid  = /home/nechk/NECHK-Results/helmet2/helmet2020-1/test.txt
+names =  /home/nechk/NECHK-Results/helmet2/tracking/tracking_v4-head/configs/baby.names
+backup = backup
