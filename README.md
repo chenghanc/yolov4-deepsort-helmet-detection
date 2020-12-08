@@ -11,31 +11,21 @@ Head detector trained using [darknet](https://github.com/AlexeyAB/darknet) Yolov
 
 ---
 
-## trained weight
-- [Google Drive](https://drive.google.com/file/d/1uOWZGx1oR1bRwp_mnvxobaXZcWs1X9ar)
-    - put weight file in `./configs`
-- **To train with your own datasets, You should do yourself with [darknet](https://github.com/AlexeyAB/darknet). And need to change some parameters**
-
-
-## used dataset
-- [roboflow.ai public dataset](https://public.roboflow.ai/object-detection/hard-hat-workers) \+ about 100 images
+## Used dataset
+- Custom dataset \+ about 100 images
 
 ---
 
-## dependencies
+## Dependencies
 - python
-    - opencv-python, numpy, scikit-image
-        - to draw boxes and texts on image
-    - tensorflow 2.2.0
-        - to track object with DeepSORT model
+    - opencv-python, numpy
+    - tensorflow
     - matplotlib
-        - to create color map
-- CUDA 10.1 / CuDNN 7.6.5
+- CUDA 10.0 / CuDNN 7.6.3
 - darknet
-    - **for yolov4 object detection**
-    - `dark.dll, pthreadVC2.dll (windows)`
-        - Pre-Compiled (I'm not sure if it works on different machine)- [Google Drive](https://drive.google.com/file/d/1D3bYPyGgWUZavLsDh5SyU0yyPqW-5xiC)
-    - `libdarknet.so (linux)`
+    - **For Yolov4 Object Detection**
+    - `libdarknet.so`
+        - Compiled with `GPU=1`, `CUDNN=1`, `OPENCV=1`, `LIBSO=1`
 
 
 ## prepare environment and run
@@ -50,13 +40,3 @@ python detectandtrack.py
 
 
 
-## example
-![](example.gif)
----
-
-## citation
-https://github.com/AlexeyAB/darknet
-
-https://github.com/theAIGuysCode/yolov3_deepsort
-
-https://public.roboflow.ai/object-detection/hard-hat-workers
