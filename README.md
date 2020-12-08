@@ -4,10 +4,10 @@ Head detector trained using [darknet](https://github.com/AlexeyAB/darknet) Yolov
 
 ## Environment
 - `Ubuntu 18.04.5 LTS`
-- `NVIDIA GTX 2080Ti`
+- `NVIDIA GeForce RTX 2080 Ti`
 - `CUDA 10.0 / CuDNN 7.6.3`
 - `Python 3.7.9`
-- `tensorflow 2.3.0rc0 GPU`
+- `Tensorflow 2.3.0rc0 GPU`
 
 ---
 
