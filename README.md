@@ -36,13 +36,15 @@ python headtracking.py
 
 # Appendix
 
-## How to perform tracking head with deepsort
+## How to perform head tracking with Deepsort
 
-- First train a **Yolov4 Detector** on custom head dataset using [darknet](https://github.com/AlexeyAB/darknet)
+Deepsort is trained for Person Re-Identification. If you want to perform head tracking with Deepsort then it would need to re-train new model on head dataset.
+
+- First train a **Yolov4 Head Detector** on custom head dataset using [darknet](https://github.com/AlexeyAB/darknet)
 - Do another training for cosine metric learning using [cosine_metric_learning](https://github.com/nwojke/cosine_metric_learning)
-    - Get cropped head dataset
-        - Implement python code to crop head images based on Yolov4 Detector result
-        - Or Crop head images using darknet based on Yolov4 Detector result
+    - Get cropped head dataset (sequential, ideally)
+        - Implement python code to crop head images based on **Yolov4 Head Detector** result
+        - Or Crop head images using darknet based on **Yolov4 Head Detector** result
     - Write a dataset adapter similar to the existing ones
-    - Train / fine-tuning a new **Tracker** and then combine with Yolov4 Detector to perform head tracking
+    - Train / fine-tune a new **Tracker** and then combine with **Yolov4 Head Detector** to perform head tracking
     
