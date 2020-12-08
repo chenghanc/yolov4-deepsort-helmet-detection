@@ -1,4 +1,4 @@
-# Yolov4-deepsort-head-detection
+# Yolov4-Deepsort-Head-Detection
 
 Head detector trained using [darknet](https://github.com/AlexeyAB/darknet) Yolov4 model. Tracker trained using [cosine_metric_learning](https://github.com/nwojke/cosine_metric_learning) model.
 
@@ -12,13 +12,11 @@ Head detector trained using [darknet](https://github.com/AlexeyAB/darknet) Yolov
 ---
 
 ## Used dataset
-- Custom dataset \+ about 100 images
-
----
+- Custom head dataset \+ about 10000 images
 
 ## Dependencies
 - python
-    - opencv-python, numpy
+    - opencv-python, numpy, scipy
     - tensorflow
     - matplotlib
 - CUDA 10.0 / CuDNN 7.6.3
@@ -28,15 +26,23 @@ Head detector trained using [darknet](https://github.com/AlexeyAB/darknet) Yolov
         - Compiled with `GPU=1`, `CUDNN=1`, `OPENCV=1`, `LIBSO=1`
 
 
-## prepare environment and run
-```python
-pip install -r requirements.txt
-```
+## Run the code
 
 ```python
-python detectandtrack.py
+python headtracking.py
 ```
-***you should modify code to make change***
 
+---
+
+# Appendix
+
+## How to perform tracking head with deepsort
+
+- First train a **Yolov4 Detector** on custom head dataset
+- Do another training for cosine metric learning
+    - Get cropped head dataset
+    - Write a dataset adapter similar to the existing ones
+    - Train a **Tracker**
+    
 
 
