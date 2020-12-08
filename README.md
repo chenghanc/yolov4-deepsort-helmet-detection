@@ -38,11 +38,10 @@ python headtracking.py
 
 ## How to perform tracking head with deepsort
 
-- First train a **Yolov4 Detector** on custom head dataset
-- Do another training for cosine metric learning
+- First train a **Yolov4 Detector** on custom head dataset using [darknet](https://github.com/AlexeyAB/darknet)
+- Do another training for cosine metric learning using [cosine_metric_learning](https://github.com/nwojke/cosine_metric_learning)
     - Get cropped head dataset
     - Write a dataset adapter similar to the existing ones
     - Train a **Tracker**
     
-
 
