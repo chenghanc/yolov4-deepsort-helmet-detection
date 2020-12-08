@@ -1,14 +1,13 @@
-# Yolov4-deepsort-helmet-detection
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fincheon-kim%2Fyolov4-deepsort-helmet-detection)](https://hits.seeyoufarm.com)
+# Yolov4-deepsort-head-detection
 
-helmet(hard hat) detector trained with [darknet framework](https://github.com/AlexeyAB/darknet) YOLOv4 model.
+Head detector trained using [darknet](https://github.com/AlexeyAB/darknet) Yolov4 model. Tracker trained using [cosine_metric_learning](https://github.com/nwojke/cosine_metric_learning) model.
 
-## tested environment
-- `Windows 10 x64 2020 (build 19041.388)`
-- `NVIDIA RTX 2070 Super`
-- `CUDA 10.1 / CuDNN 7.6.5`
-- `Python 3.7.7 x64`
-- `tensorflow 2.2.0 GPU`
+## Environment
+- `Ubuntu 18.04.5 LTS`
+- `NVIDIA GTX 2080Ti`
+- `CUDA 10.0 / CuDNN 7.6.3`
+- `Python 3.7.9`
+- `tensorflow 2.3.0rc0 GPU`
 
 ---
 
