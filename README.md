@@ -34,6 +34,10 @@ python headtracking.py
 
 ---
 
+## Example
+![](test-output.gif)
+---
+
 # Appendix
 
 ## How to perform head tracking with Deepsort
