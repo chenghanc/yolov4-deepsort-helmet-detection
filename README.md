@@ -20,7 +20,7 @@ Head detector trained using [darknet](https://github.com/AlexeyAB/darknet) Yolov
     - tensorflow
     - matplotlib
 - CUDA 10.0 / CuDNN 7.6.3
-- darknet
+- #### darknet
     - **For Yolov4 Object Detection**
     - `libdarknet.so`
         - Compiled with `GPU=1`, `CUDNN=1`, `OPENCV=1`, `LIBSO=1`
@@ -35,11 +35,11 @@ python headtracking.py
 ---
 
 ## Example
-- Based on model trained for Person Re-Identification
+- #### Based on model trained for Person Re-Identification
 
 ![](test-output.gif)
 
-- Based on model trained for Head dataset
+- #### Based on model trained for Head dataset
 
 ![](test-output-head.gif)
 
