@@ -35,7 +35,14 @@ python headtracking.py
 ---
 
 ## Example
+- Based on model trained for Person Re-Identification
+
 ![](test-output.gif)
+
+- Based on model trained for Head dataset
+
+![](test-output-head.gif)
+
 ---
 
 # Appendix
